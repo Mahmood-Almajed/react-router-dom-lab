@@ -10,7 +10,7 @@ const msg=`Mailbox Not Found!`;
         {props.mailboxes.length===0 ? (msg):(
         
         props.mailboxes.map((mailbox)=>(
-            <li key={mailbox._id}><Link to={`/mailboxes/${mailbox._id}`}>{`Mailbox ${mailbox._id}`}</Link></li>
+            <li className="mail-box" key={mailbox._id}><Link to={`/mailboxes/${mailbox._id}`}>{`Mailbox ${mailbox._id}`}</Link></li>
             
         )))}
         </ul>
